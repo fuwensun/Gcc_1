@@ -23,3 +23,6 @@
 3、  
 /usr/include/X11  
 /usr/include/c++  
+
+4、用-I标志来指定非标准目录中的头文件  
+gcc -I /usr/xxx/include xx.c
