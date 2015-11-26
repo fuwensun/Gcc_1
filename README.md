@@ -25,4 +25,23 @@
 /usr/include/c++  
 
 4、用-I标志来指定非标准目录中的头文件  
-gcc -I /usr/xxx/include xx.c
+gcc -o xx -I /usr/openwin/include xx.c
+
+三、库文件  
+
+1、  
+/lib  
+/usr/lib
+
+2、  
+libxxx.a静态库  
+libxxx.so动态库  
+
+3、指定库路径  
+gcc -o xx xx.c /usr/lib/libm.a
+
+4、-lm 表示指定路径下libm.so(优先)或者libm.a  
+gcc -o xx xx.c -lm  
+
+5、用-L标志来指定非标准目录中的头文件  
+gcc -o xx -L /usr/openwin/lib xx.c -lX11  
