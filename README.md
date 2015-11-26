@@ -22,5 +22,5 @@
 /usr/include/linux
 
 3、
-/usr/include/X11
+/usr/include/X11\\
 /usr/include/c++
